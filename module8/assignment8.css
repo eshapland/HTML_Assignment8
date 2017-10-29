@@ -13,7 +13,7 @@ body{
 
 /*  Navigation Bar  */
 
-ul {
+nav ul {
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,11 +24,11 @@ ul {
     background-color: #333;
 }
 
-li {
+nav li {
     float: right;
 }
 
-li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -38,11 +38,11 @@ li a {
     font-size: 16px;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: #1f8987;
 }
 
-.active {
+nav .active {
     background-color: #333;
 }
 
@@ -65,16 +65,17 @@ h1 {
     color: #1B1F1F;
     text-shadow: 0 0 20px white;
     text-align: center;
-    margin-top: auto;
-    padding-top: 140px;
+    margin: auto;
+    padding-top: 160px;
 }
 
 h2 {
     color: #1B1F1F;
     text-shadow: 0 0 10px white;
     text-align: center;
+    margin: auto;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 36px;
+    font-size: 42px;
 }
 
 #lowerBorder {
@@ -82,13 +83,11 @@ h2 {
     padding: 16px 0;
 }
 
-/*  Content: My Trip...  */
+/*  Content  */
 
 main {
 	max-width: 960px;
-	margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    margin: auto;
 	color: white;
 }
 
@@ -99,8 +98,13 @@ h3 {
 }
 
 h4 {
-    color: white;
+    color: #1f8987;
+    text-align: left;
     font-size: 18px;
+}
+
+video {
+    float: left;
 }
 
 .column {  /* Create two unequal columns that floats next to each other */
@@ -130,4 +134,21 @@ h4 {
     clear: both;
 }
 
+video{
+    float: right;
+}
 
+/*  Footer  */
+
+footer {
+    margin-top: 100px;
+    padding: 14px 0;
+    background-color: #333;
+    color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;    
+}
+
+a {
+    color: #1f8987;
+}

@@ -85,7 +85,7 @@ h2 {
 /*  Content: My Trip...  */
 
 main {
-	width: 1000px;
+	max-width: 960px;
 	margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -105,21 +105,23 @@ h4 {
 
 .column {  /* Create two unequal columns that floats next to each other */
     float: left;
-    margin: 8px 0;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    margin: 8px 0;  
 }
 
 .left {
   width: 450px;
-  background-color: #333;
+  margin: 15px; 
 }
 
 .right {
   width: 430px;
-  height: 240px;
-  padding: 40px;
-  background-color: #333;
+  margin: 15px; 
+}
+
+.row {
+    
+    background-color: #333;
+    margin: 20px 0;
 }
 
 .row:after {  /* Clear floats after the columns */
